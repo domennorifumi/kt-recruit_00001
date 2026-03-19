@@ -1,6 +1,10 @@
 /* ============ リセット・基本 ============ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* スマホ専用改行（PCでは非表示） */
+.sp-br { display: none; }
+@media (max-width: 768px) { .sp-br { display: block; } }
+
 :root {
   --yellow:  #F5C800;
   --orange:  #F07800;
